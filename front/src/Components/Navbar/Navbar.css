@@ -1,0 +1,54 @@
+/* Contenedor principal de la barra de navegación */
+.nav {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    margin: 0; 
+    padding: 4px 60px;
+    
+    background-color: #1a13138a; 
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+/* Tamaño del logo */
+.navLogo img {
+    width: 90px; 
+}
+
+/* Estilos de la lista del menú */
+.navMenu {
+    display: flex; 
+    align-items: center; 
+    font-size: 21px; 
+    gap: 90px; 
+}
+
+.nav li a{
+    color: rgb(238, 238, 238); 
+}
+
+.nav li a:hover {
+    cursor: pointer; 
+    color: rgb(75, 175, 100); 
+}
+
+.btnNav {
+    font-size: 15px; 
+    font-weight: 500; 
+    background-color: rgb(238, 238, 238); 
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: .8rem 1rem;
+    color: hsl(240, 1%, 48%);
+    box-shadow: 0 2px 4px hsl(330, 12%, 97%);
+}
+
+.btnNav:hover{
+    color: hsl(120, 36%, 42%);
+    background: hsl(96, 75%, 89%);
+}

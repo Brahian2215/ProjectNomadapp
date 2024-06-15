@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
+
+/* Radio de los bordes */
+:root {
+    --radius: 0.2rem;
+}
+
+/* Estilo del contenedor principal */
+.wrapper {
+  display: flex;    
+  justify-content: center;
+  gap: 3rem; /* Espacio entre tarjetas */
+  padding: 1rem; /* Espacio interno del contenedor */
+  flex-wrap: wrap;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  transition: transform 200ms ease-in;
+}
+
+/* Estilo de la tarjeta */
+.card {
+  width: 16rem;
+  box-shadow: 0 2px 20px #e1e5ee;
+  border-radius: var(--radius);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  background-color: #534848b8;
+  
+}
+
+  /* Estilo de la imagen de la tarjeta */
+.card-image {
+    height: 13rem;
+    display: flex;
+    margin: auto;
+    padding-top: 1.5rem;
+    width: 70%;
+    object-fit: cover;
+  }
+
+  /* Estilo del título de la tarjeta */
+.card-title {
+    display: flex;
+    justify-content: center;
+    padding: .5rem 1rem;
+    color: rgb(122, 255, 153);
+  }
+
+  /* Estilo de la descripción de la tarjeta */
+.card-description {
+    padding: 0 1rem;
+    color: #c5ffda;
+    text-align: justify;
+  }
+
+  /* Estilo del botón de la tarjeta */
+  .card-btn {
+    padding: 1rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+    border: 2px solid #039d69;
+    background: transparent;
+    color: #6cffae;
+    cursor: pointer;
+    border-radius: var(--radius);
+    transition: background 200ms ease-in, color 200ms ease-in;
+  }
+
+  /* Efecto hover en la tarjeta */
+  .card:hover {
+    transform: scale(1.02);
+  }
+
+  /* Efecto hover en el botón de la tarjeta */
+  .card:hover .card-btn {
+    background: #039d69;
+    color: white;
+  }
+
+
+
+

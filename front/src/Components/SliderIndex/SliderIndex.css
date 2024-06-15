@@ -1,0 +1,137 @@
+:root {
+    --primaryColor: rgb(75, 175, 100);
+    --secondaryColor: rgb(238, 238, 238);
+    --hoverColor: #e7e7e7;
+    --activeColor: rgb(7, 172, 48);
+}
+
+/* .slider: Contenedor principal del slider.*/
+.slider {
+    margin: 200px 60px 0 60px;
+}
+
+/* .sliderText: Estilo para el texto principal del slider. */
+.sliderText {
+    color: var(--primaryColor);
+    font-size: 70px;
+    font-weight: 800;
+    line-height: 80px;
+}
+
+/* .sliderSubtext: Estilo para el texto secundario del slider. */
+.sliderSubtext {
+    color: var(--secondaryColor);
+    font-size: 50px;
+    font-weight: 1000;
+    line-height: 80px;
+    font-family: monospace;
+}
+
+/* .sliderBtn: Estilo para el botón del slider. */
+.sliderBtn {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: fit-content;
+    margin-top: 40px;
+    padding: 5px 17px;
+    padding-left: 27px;
+    border-radius: 60px;
+    background-color: var(--secondaryColor);
+    cursor: pointer;
+    color: #292929;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+}
+
+/* .sliderBtn:hover: Estilo para el botón del slider cuando se pasa el cursor sobre él. */
+.sliderBtn:hover {
+    background: var(--hoverColor);
+    color: black;
+}
+
+.sliderBtn:hover .iconIndex {
+    transform: translateX(5px);
+    color: hsl(94, 55%, 56%);
+}
+
+/* .sliderDotPlay: Contenedor para los puntos de navegación y el control de reproducción. */
+.sliderDotPlay {
+    position: fixed;
+    width: 90%;
+    bottom: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .sliderDots: Lista de puntos de navegación. */
+.sliderDots {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    list-style: none;
+}
+
+/* .sliderDot: Estilo para cada punto de navegación. */
+.sliderDot {
+    width: 15px;
+    height: 15px;
+    background: #FFF;
+    border-radius: 7.5px;
+    cursor: pointer;
+}
+
+/* .sliderDot.orange: Estilo para el punto de navegación activo. */
+.sliderDot.orange {
+    background: var(--activeColor);
+}
+
+/* .sliderPlay: Contenedor para el control de reproducción. */
+.sliderPlay {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+}
+
+/* .iconIndex: Estilo para los iconos dentro del control de reproducción y el botón. */
+.iconIndex {
+    color: var(--primaryColor);
+    font-size: 60px;
+    transition: .3s ease;
+}
+
+/* .sliderPlay p: Estilo para el texto dentro del control de reproducción. */
+.sliderPlay p {
+    color: var(--secondaryColor);
+    font-size: 19px;
+    cursor: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

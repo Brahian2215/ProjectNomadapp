@@ -1,0 +1,213 @@
+.registerPage {
+  height: 100vh;
+  overflow: hidden;
+  background: rgb(60, 60, 60);
+}
+
+.container {
+  height: 87vh;
+  margin: auto;
+  box-shadow: 2px 2px 8px rgb(190, 190, 190);
+  border-radius: 10px;
+  background: hsl(0, 0%, 91%);
+  width: 60%;
+}
+
+.videoDivReg {
+  position: relative;
+  display: flex;
+  flex-basis: 50%;
+  height: 100%;
+  padding: 0 7px;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.videoDivReg video {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.textDiv {
+  position: relative;
+}
+
+.textDiv .titleReg {
+  color: hsl(0, 0%, 100%);
+  font-size: 35px;
+  font-weight: 600;
+  transform: translateY(-50px);
+}
+
+.textDiv .titleReg + p {
+  color: #cfcfcf;
+  font-weight: 400;
+  font-size: 19px;
+}
+
+.footerDivReg {
+  position: absolute;
+  bottom: 9px;
+  right: 48px;
+  padding: 0 1.5rem;
+  height: 62px;
+  background: rgba(255, 255, 255, 0.248);
+  gap: 2.5rem;
+  backdrop-filter: blur(1px);
+  border-radius: 10px;
+}
+
+.footerDivReg .text {
+  color: hsl(0, 0%, 100%);
+  font-size: 17px;
+}
+
+.footerDivReg .btn {
+  background: rgb(238, 238, 238);
+  color: rgb(28, 131, 54);
+  padding: 0.6rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.3s ease;
+  font-size: 15.5px;
+}
+
+.footerDivReg .btn:hover {
+  background: hsl(93, 75%, 76%);
+  color: hsl(0, 0%, 18%);
+}
+
+.formDivReg {
+  margin: auto;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+
+.headerDiv {
+  text-align: center;
+  font-size: 21px;
+  color: hsl(0, 0%, 18%);
+}
+
+.formDivReg {
+  margin: auto;
+  flex-direction: column;
+}
+
+.formDivReg .headerDiv {
+  text-align: center;
+  font-size: 17px;
+  color: hsl(0, 0%, 18%);
+}
+
+.formDivReg .headerDiv img {
+  width: 105px;
+}
+
+.formReg {
+  display: grid;
+  gap: .5rem;
+  padding-left: 20px;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.inputDivReg {
+  display: flex;
+  flex-direction: column;
+  width: 94%;
+}
+
+.inputReg {
+  gap: 0.5rem;
+  padding: 0.7rem;
+  background: hsl(330, 12%, 97%);
+  border-radius: 10px;
+}
+
+.inputDivReg input[type="text"] {
+  background: none;
+  border: none;
+  outline: none;
+  width: 85%;
+  font-size: 13px;
+}
+
+.inputDivReg input[type="password"] {
+  background: none;
+  border: none;
+  outline: none;
+  width: 85%;
+  font-size: 13px;
+}
+
+.inputDivReg input[type="email"] {
+  background: none;
+  border: none;
+  outline: none;
+  width: 85%;
+  font-size: 13px;
+}
+
+.inputDivReg select {
+  background: none;
+  border: none;
+  outline: none;
+  width: 85%;
+  font-size: 13px;
+}
+
+.inputDivReg .icon {
+  margin-right: 0.5rem;
+  color: rgb(190, 190, 190);
+  font-size: 1.3rem;
+}
+
+.inputDivReg label {
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0.5rem 0;
+  color: hsl(0, 0%, 18%);
+}
+
+#typeDni {
+  color: rgb(53, 53, 53);
+  cursor: pointer;
+}
+
+#role {
+    color: rgb(53, 53, 53);
+    cursor: pointer;
+  }
+
+.customSelect option {
+  background-color: rgba(156, 156, 156, 0.329);
+  color: rgb(53, 53, 53);
+}
+
+option {
+  font-size: 14px;
+}
+
+#date{
+  color: rgb(53, 53, 53);
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 13px;
+  width: 86%;
+}
+
+.formReg button{
+  transform: translateX(108px);
+  margin-top: 11px;
+}

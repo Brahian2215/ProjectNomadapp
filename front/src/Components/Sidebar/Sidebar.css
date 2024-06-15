@@ -1,0 +1,201 @@
+.dashboardContainer {
+  background: #a5a5a52c;
+  width: 100%;
+  display: flex;
+}
+
+.sideBar {
+  background: #a5a5a541;
+  box-shadow: 3px 0px 13px rgb(60, 151, 95);
+  width: 18%;
+  height: 100%;
+  overflow: auto;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 0;
+}
+
+.logoDiv img {
+  width: 55%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.menuDiv,
+.settingsDiv {
+  padding: 0 1.5rem;
+  margin-top: 10px;
+}
+
+.settingsDiv {
+  margin-top: 23px;
+}
+
+.menuDiv .divTitle,
+.settingsDiv .divTitle {
+  font-size: 1.3rem;
+  color: rgb(75, 175, 100);
+  padding: 12px 0;
+}
+
+.sideBar .listItem::before {
+  content: "";
+  position: absolute;
+  height: 0;
+  left: 0;
+  width: 5px;
+  bottom: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background: var(--primaryColor);
+  transition: 0.3s ease;
+}
+
+.sideBar .menuLink {
+  color: #5c5c5c;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+.sideBar .listItem:hover .menuLink {
+  color: rgb(37, 177, 72);
+  transition: 0.3s ease;
+}
+
+.menuLink .icon {
+  margin-right: 0.5rem;
+  font-size: 23px;
+  color: #5c5c5c;
+}
+
+.menuLink:hover .icon {
+  color: rgb(37, 177, 72);
+  transition: 0.3s ease;
+}
+
+.sideBar .listItem {
+  position: relative;
+}
+
+.sideBar .listItem:hover::before {
+  height: 100%;
+}
+
+.btnl {
+  padding: 0.8rem;
+  background: hsla(133, 42%, 67%, 0.452);
+  border-radius: 10px;
+  border: none;
+  color: rgb(43, 43, 43);
+  align-items: center;
+  margin: auto;
+  justify-content: center;
+  font-size: 17px;
+  width: 80%;
+  height: 90%;
+  gap: 0.3rem;
+  margin-top: 30px;
+  transition: 0.3s ease;
+}
+
+.btnl .icon {
+  color: rgb(43, 43, 43);
+  transition: 0.3s ease;
+  font-size: 25px;
+}
+
+.btnl:hover .icon {
+  color: white;
+  transform: translateX(-10px);
+}
+
+.btnl:hover {
+  background: var(--primaryColor);
+  color: white;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.sideBarCard {
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 13px;
+}
+
+.sideBarCard .icon {
+  position: absolute;
+  background: hsla(133, 49%, 34%, 0.651);
+  border: 7px solid rgba(184, 184, 184, 0.658);
+  font-size: 3.1rem;
+  border-radius: 50%;
+  top: -8px;
+  right: 50%;
+  transform: translate(68%);
+  z-index: 100;
+  color: black;
+}
+
+.cardContent {
+  position: relative;
+  padding: 1rem;
+  background: hsla(137, 15%, 63%, 0.452);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cardContent h3 {
+  font-size: 16px;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.726);
+}
+
+.cardContent p {
+  color: rgb(68, 68, 68);
+  padding-bottom: 2rem;
+  font-weight: 500;
+}
+
+.cardContent .btn {
+  position: relative;
+  color: rgb(63, 63, 63);
+  z-index: 1000;
+  background: hsl(134, 14%, 64%);
+  box-shadow: 0 2px 4px hsl(0, 0%, 57%);
+}
+
+.cardContent .btn:hover {
+  color: white;
+  background: hsl(133, 28%, 42%);
+}
+
+.circle1,
+.circle2 {
+  position: absolute;
+  background: rgba(85, 204, 101, 0.699);
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.circle1 {
+  height: 100px;
+  width: 100px;
+  top: -45px;
+  left: -45px;
+}
+
+.circle2 {
+  height: 150px;
+  width: 150px;
+  bottom: -80px;
+  right: -70px;
+  z-index: 1;
+}

@@ -1,0 +1,216 @@
+.userDashTop {
+  flex: 1;
+  overflow: auto;
+  padding: 1rem;
+  align-items: normal;
+}
+
+.headerSection {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.headerSection .title h1 {
+  font-size: 40px;
+  color: rgb(75, 175, 100);
+  font-weight: 700;
+}
+
+.headerSection .title p {
+  font-size: 20px;
+  color: hsl(0, 0%, 39%);
+  font-weight: 500;
+}
+
+.userTop {
+  gap: 1rem;
+  padding-top: 20px;
+}
+
+.userTop .icon {
+  font-size: 47px;
+  background: rgb(219, 219, 219);
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0 2px 4px hsl(128, 41%, 29%);
+  color: hsl(0, 0%, 35%);
+  cursor: pointer;
+}
+
+.userTop .icon:hover {
+  background: hsl(127, 33%, 65%);
+  color: white;
+}
+
+.userTop .userImage {
+  border: 1px solid hsl(128, 29%, 45%);
+  border-radius: 50%;
+  width: 54px;
+  height: 48px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px hsl(128, 41%, 29%);
+  cursor: pointer;
+}
+
+.userTop .userImage:hover {
+  box-shadow: 0px 3px 8px hsl(128, 41%, 29%);
+}
+
+.userTop .userImage img {
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.cardSection {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 2rem;
+  padding: 0 26px 0 31px;
+}
+
+.rightCard {
+  position: relative;
+  flex-basis: 70%;
+  height: 200px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem;
+  padding-top: 12px;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+}
+
+.videoDivDash {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.cardSection h1 {
+  font-size: 23px;
+  color: white;
+  font-weight: 800;
+  z-index: 100;
+  transform: translateY(20px);
+}
+
+.cardSection p {
+  padding: 1rem 0 1rem 0;
+  color: rgb(182, 226, 193);
+  font-weight: 500;
+  transform: translateY(15px);
+  font-size: 16px;
+  z-index: 100;
+}
+
+.buttons {
+  gap: 1.5rem;
+  
+}
+
+.buttons button {
+  background: rgb(112, 156, 123);
+  color: rgb(218, 240, 224);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease;
+  margin-top: 40px;
+}
+
+.buttons button:hover {
+  background: rgb(194, 235, 203);
+  color: rgb(44, 131, 66);
+}
+
+.buttons .btnTop {
+  box-shadow: none;
+  padding: 0.8rem 2rem;
+  z-index: 100;
+  border-radius: 15px;
+}
+
+.buttons .transparent {
+  background: none;
+  border: 2px solid rgb(117, 182, 134);
+  color: rgb(207, 228, 213);
+  transition: 0.3s ease;
+}
+
+.buttons .transparent:hover {
+  background: rgb(194, 235, 203);
+  color: rgb(44, 131, 66);
+  border: 2px solid rgb(44, 131, 66);
+}
+
+.leftCard .mainCardTop {
+  position: relative;
+  padding: 0.7rem 1.3rem;
+  display: flex;
+  background: rgb(193, 219, 198);
+  border-radius: 1rem;
+}
+
+.leftCard .textTop {
+  z-index: 100;
+}
+
+.leftCard h1 {
+  font-size: 23px;
+  padding-bottom: 0.5rem;
+  color: rgb(71, 163, 94);
+  text-align: center;
+  transform: translateY(-0px);
+}
+
+.dashCardTop {
+  display: flex;
+  gap: 1rem;
+  font-weight: 600;
+  color: rgb(59, 59, 59);
+  font-size: 16px;
+  transform: translateX(18px);
+}
+
+.dashCardTop small {
+  font-size: 15px;
+  color: rgb(37, 182, 73);
+  font-weight: 700;
+  display: flex;
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+.btnTopRoute button {
+  margin-top: 1rem;
+  margin-left: 125px;
+  cursor: pointer;
+  border: none;
+  padding: 4px 24px 10px 40px;
+  background: rgb(145, 187, 155);
+  border-radius: 10px;
+  color: rgb(68, 68, 68);
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.2s ease;
+}
+
+.btnTopRoute button:hover {
+  background: rgb(101, 201, 124);
+  color: white;
+  transition: 0s ease;
+}
+
+.btnTopRoute .icon {
+  color: rgb(75, 75, 75);
+  font-size: 23px;
+  transform: translateY(7px);
+}
+
+.leftCard .btnTopRoute button:hover .icon {
+  color: white;
+}
